@@ -14,7 +14,7 @@
   &__nav {
     display: none;
 
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       display: flex;
   }
 }
@@ -62,7 +62,7 @@
   &__contakt {
     display: none;
 
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       display: flex;
       margin-left: auto;
     }
@@ -143,15 +143,15 @@
    padding: 0;
    background: none;
    border: none;
+
+   @media (min-width: 768px){
+    display: none;
+  }
 }
 
   header__burger-icon {
     fill: currentColor;
     cursor: pointer;
-    
-    @media (min-width: 768px){
-      display: none;
-    }
 
   &-icon :focus,
   &-icon :hover {

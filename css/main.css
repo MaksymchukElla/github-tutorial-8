@@ -1028,13 +1028,13 @@ p {
   margin-right: 93px;
 }
 .header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .header__nav {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .header__nav .header__item + .header__item {
@@ -1073,14 +1073,14 @@ p {
   border-radius: 2px;
 }
 .header__contakt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  display: none;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .header__contakt {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
   }
 }
 .header__contakt .header__item + .header__item {
@@ -1159,11 +1159,17 @@ p {
   background: none;
   border: none;
 }
-.header__burger-icon {
+@media (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+header__burger-icon {
   fill: currentColor;
   cursor: pointer;
 }
-.header__burger-icon :focus, .header__burger-icon :hover {
+header__burger-icon-icon :focus, header__burger-icon-icon :hover {
   background-color: var(--accent-color);
 }
 
