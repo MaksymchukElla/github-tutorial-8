@@ -1,0 +1,70 @@
+.visually-hidden {
+@include visually-hidden;
+}
+
+.benefits__text {
+  width: 270px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.benefits__desc {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.benefits__blok {
+  display: block;
+  margin-right: 30px;
+}
+
+.benefits__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.benefits__blok:last-child {
+  margin-right: 0px;
+}
+
+.benefits__icon {
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+.icon__antenna {
+  height: 70px;
+  width: 70px;
+  margin: 25px 102.54px;
+}
+
+.icon__clock-1 {
+  height: 70px;
+  width: 66.96px;
+  margin: 25px 101.54px;
+}
+
+.icon__diagram {
+  height: 53.6px;
+  width: 70px;
+  margin: 33.11px 100px;
+}
+
+.icon__astronaut {
+  height: 70px;
+  width: 70px;
+  margin: 25px 100px;
+}

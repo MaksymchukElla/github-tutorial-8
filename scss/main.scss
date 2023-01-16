@@ -1,0 +1,27 @@
+/*utils*/
+@import './utils/fonts';
+@import './utils/viriables';
+@import './utils/mixins';
+
+/*base*/
+@import './base/base';
+@import './base/reset';
+
+/*components*/
+@import './components/addition-section';
+@import './components/benefits-section';
+@import './components/button-list';
+@import './components/clients-section';
+@import './components/hero-section';
+@import './components/logo';
+@import './components/networks';
+@import './components/portfolio';
+@import './components/social';
+@import './components/team-section';
+
+/*layout*/
+@import './layout/container';
+@import './layout/forma';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/modal';

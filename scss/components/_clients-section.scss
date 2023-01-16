@@ -1,0 +1,38 @@
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.clients__name {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.icon__list {
+  display: inline-flex;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  box-sizing: border-box;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  flex-basis: calc((100% - 150px) / 6);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__icon-list {
+  margin-bottom: 50px;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
