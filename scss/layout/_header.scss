@@ -130,3 +130,41 @@
     }
   }
 }
+
+.header_menu {
+  display: flex;
+  align-items: center;
+  justify-content: left
+}
+
+.header__burger{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  align-items: center;
+  // display: none;
+
+  &-icon {
+    width: 24px;
+    height: 16px;
+    
+    fill: currentColor;
+    cursor: pointer;
+  }
+
+  &-icon :focus,
+  &-icon :hover {
+    background-color: var(--accent-color);
+  }
+
+
+}
+
+
+
