@@ -12,8 +12,12 @@
   }
 
   &__nav {
-    display: flex;
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex;
   }
+}
 
   &__nav &__item + &__item {
     margin-left: 50px;
@@ -56,8 +60,12 @@
   }
 
   &__contakt {
-    display: flex;
-    margin-left: auto;
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex;
+      margin-left: auto;
+    }
 
     & .header__item + .header__item {
       margin-left: 40px;
@@ -131,39 +139,24 @@
   }
 }
 
-.header_menu {
-  display: flex;
-  align-items: center;
-  justify-content: left
+.header__burger{
+   padding: 0;
+   background: none;
+   border: none;
 }
 
-.header__burger{
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  padding: 0;
-  background: none;
-  border: none;
-  align-items: center;
-  // display: none;
-
-  &-icon {
-    width: 24px;
-    height: 16px;
-    
+  header__burger-icon {
     fill: currentColor;
     cursor: pointer;
-  }
+    
+    @media (min-width: 768px){
+      display: none;
+    }
 
   &-icon :focus,
   &-icon :hover {
     background-color: var(--accent-color);
   }
-
-
 }
 
 
