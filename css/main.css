@@ -154,6 +154,11 @@ p {
   text-transform: uppercase;
   font-style: normal;
 }
+@media (max-width: 768px) {
+  .benefits__text {
+    text-align: center;
+  }
+}
 
 .benefits__desc {
   color: var(--title-text-color);
@@ -163,21 +168,28 @@ p {
   letter-spacing: 0.03em;
 }
 
-.benefits__blok {
-  display: block;
-  margin-right: 30px;
+@media (min-width: 768px) {
+  .benefits__blok {
+    display: block;
+    margin-right: 30px;
+  }
 }
 
 .benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
   padding-left: 0;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+  }
 }
 
 .benefits__blok:last-child {
@@ -185,34 +197,85 @@ p {
 }
 
 .benefits__icon {
-  display: block;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+}
+@media (min-width: 768px) {
+  .benefits__icon {
+    display: block;
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .benefits__icon {
+    width: 350px;
+  }
 }
 
 .icon__antenna {
   height: 70px;
   width: 70px;
-  margin: 25px 102.54px;
+  margin: 25px 191.54px;
+}
+@media (min-width: 768px) {
+  .icon__antenna {
+    margin: 25px 144.54px;
+  }
+}
+@media (min-width: 1200px) {
+  .icon__antenna {
+    margin: 25px 102.54px;
+  }
 }
 
 .icon__clock-1 {
   height: 70px;
   width: 66.96px;
-  margin: 25px 101.54px;
+  margin: 25px 191.5x;
+}
+@media (min-width: 768px) {
+  .icon__clock-1 {
+    margin: 25px 143.54px;
+  }
+}
+@media (min-width: 1200px) {
+  .icon__clock-1 {
+    margin: 25px 101.54px;
+  }
 }
 
 .icon__diagram {
   height: 53.6px;
   width: 70px;
-  margin: 33.11px 100px;
+  margin: 33.11px 190px;
+}
+@media (min-width: 768px) {
+  .icon__diagram {
+    margin: 25px 142px;
+  }
+}
+@media (min-width: 1200px) {
+  .icon__diagram {
+    margin: 25px 100px;
+  }
 }
 
 .icon__astronaut {
   height: 70px;
   width: 70px;
-  margin: 25px 100px;
+  margin: 25px 190px;
+}
+@media (min-width: 768px) {
+  .icon__astronaut {
+    margin: 25px 142px;
+  }
+}
+@media (min-width: 1200px) {
+  .icon__astronaut {
+    margin: 25px 100px;
+  }
 }
 
 .button-list {
@@ -620,14 +683,24 @@ p {
 
 /*layout*/
 .container {
+  width: 480px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .form-field__label {
