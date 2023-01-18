@@ -1,4 +1,5 @@
 .addition {
+  @include visually-hidden;
   padding-top: 0px;
 
   &__text {

@@ -74,6 +74,17 @@ p {
 
 /*components*/
 .addition {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
   padding-top: 0px;
 }
 .addition__text {
@@ -640,11 +651,19 @@ p {
   margin-top: -30;
 }
 
-.team__main > .team__list {
-  margin-right: 30px;
-  margin-top: 30px;
-  -ms-flex-preferred-size: calc(25% - 30px);
-      flex-basis: calc(25% - 30px);
+@media (min-width: 768px) {
+  .team__main > .team__list {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .team__main > .team__list {
+    margin-right: 30px;
+    margin-top: 30px;
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .team__list {
@@ -652,9 +671,6 @@ p {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-.team__list:nth-child(4n) {
-  margin-right: 0px;
 }
 
 .team__title {
@@ -884,6 +900,12 @@ p {
 }
 .field__form-submit:focus {
   background: #188ce8;
+}
+
+.footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__info {
