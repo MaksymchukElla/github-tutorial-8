@@ -12,12 +12,12 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 28px;
-  margin-bottom: 12px;
   text-align: center;
 
   // @media (min-width: 1200px){
   //   margin-top: 9px;
   //   margin-bottom: 0;
+  //  margin-bottom: 12px;
   // }
 }
 
@@ -153,6 +153,11 @@
 
 .footer-button {
   margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
 }
 
 // .footer-mailing__mailing-user {

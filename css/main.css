@@ -949,7 +949,6 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 28px;
-  margin-bottom: 12px;
   text-align: center;
 }
 
@@ -1143,6 +1142,15 @@ p {
 
 .footer-button {
   margin: 0 auto;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
