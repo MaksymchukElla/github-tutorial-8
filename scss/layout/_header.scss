@@ -152,7 +152,9 @@
 }
 
   header__burger-icon {
-    fill: currentColor;
+    width: 24px;
+    height: 16px;
+    background: #212121;
     cursor: pointer;
 
   &-icon :focus,
