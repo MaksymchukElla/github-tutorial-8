@@ -22,18 +22,15 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  @media (min-width: 768px) {
-    margin-bottom: 0px;
-  }
 }
 
 .benefits__blok {
+  display: block;
   margin-bottom: 30px;
 
   @media (min-width: 768px) {
-    display: block;
     margin-right: 30px;
+    width: calc((100% - 30px) / 2);
   }
 }
 
@@ -45,6 +42,8 @@
   @media (min-width: 768px) {
     display: flex;
 
+
+    
     // margin-block-start: 0;
     // margin-block-end: 0;
   }
@@ -64,13 +63,11 @@
   justify-content: center;
   background-color: #f5f4fa;
 
-  @media (min-width: 480px) {
-    width: 450px;
-  }
 
   @media (min-width: 768px) {
     display: block;
     width: 354px;
+    
   }
 
   @media (min-width: 1200px) {
