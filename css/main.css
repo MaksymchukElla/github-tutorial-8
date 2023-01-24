@@ -82,7 +82,7 @@ p {
 .addition {
   padding-top: 0px;
 }
-@media (min-width: 480px) and (max-width: 1199px) {
+@media (min-width: 320px) and (max-width: 1199px) {
   .addition {
     position: absolute;
     white-space: nowrap;
@@ -222,11 +222,16 @@ p {
 }
 
 .benefits__icon {
-  width: 450px;
+  width: 100%;
   height: 120px;
   list-style: none;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+}
+@media (min-width: 480px) {
+  .benefits__icon {
+    width: 450px;
+  }
 }
 @media (min-width: 768px) {
   .benefits__icon {
@@ -240,10 +245,12 @@ p {
   }
 }
 
-.icon__antenna {
-  height: 70px;
-  width: 65.32px;
-  margin: 25px 191.54px;
+@media (max-width: 768px) {
+  .icon__antenna {
+    height: 70px;
+    width: 65.32px;
+    margin: 25px 191.54px;
+  }
 }
 @media (min-width: 768px) {
   .icon__antenna {
@@ -493,31 +500,31 @@ p {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(../images/mob/mob2x.jpg);
+    background-image: url(../../images/mob/mob2x.jpg);
   }
 }
 @media (min-width: 768px) {
   .overlay {
     width: 100%;
     height: 400px;
-    background-image: url(../images/tab/tab1x.jpg);
+    background-image: url(../../images/tab/tab1x.jpg);
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(../images/tab/tab2x.jpg);
+    background-image: url(../../images/tab/tab2x.jpg);
   }
 }
 @media (min-width: 1200px) {
   .overlay {
     width: 100%;
     height: 600px;
-    background-image: url(./images/img-min.jpg);
+    background-image: url(../images/img-min.jpg);
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(../images/des/img2x.jpg);
+    background-image: url(../../images/des/img2x.jpg);
   }
 }
 
@@ -792,7 +799,7 @@ p {
 
 /*layout*/
 .container {
-  width: 100%;
+  max-width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -800,6 +807,11 @@ p {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -1067,7 +1079,7 @@ p {
 
 .footer-mailing__mailing-e-mail {
   position: relative;
-  width: 450px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   padding: 0px;
@@ -1076,6 +1088,11 @@ p {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media (min-width: 480px) {
+  .footer-mailing__mailing-e-mail {
+    width: 450px;
+  }
 }
 
 .footer-mailing__email-field-label {
