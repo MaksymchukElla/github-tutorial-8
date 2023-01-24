@@ -401,9 +401,8 @@ p {
 }
 
 .icon__list {
-  width: 210px;
   height: 92px;
-  margin-right: 25px;
+  width: 100%;
   margin-bottom: 30px;
   fill: #afb1b8;
   -webkit-box-sizing: border-box;
@@ -413,7 +412,11 @@ p {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) {
+  .icon__list {
+    margin-right: 25px;
+    width: 210px;
+  }
   .icon__list:nth-child(2n) {
     margin-right: 0px;
   }
@@ -446,13 +449,15 @@ p {
   }
 }
 
-.clients__icon-list {
-  margin-bottom: 50px;
-}
 .clients__icon-list:focus, .clients__icon-list:hover {
   cursor: pointer;
   fill: var(--accent-color);
   border-color: var(--accent-color);
+}
+@media (min-width: 1200px) {
+  .clients__icon-list {
+    margin-bottom: 50px;
+  }
 }
 
 .main {

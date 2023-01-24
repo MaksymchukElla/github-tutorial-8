@@ -22,10 +22,10 @@
 }
 
 .icon__list {
-  width: 210px;
   height: 92px;
-   margin-right: 25px;
+  width: 100%;
   margin-bottom: 30px;
+  
   fill: #afb1b8;
   box-sizing: border-box;
   border: 1px solid #afb1b8;
@@ -33,7 +33,11 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media (min-width: 480px) and (max-width: 767px) {
+  @media (min-width: 480px) {
+    margin-right: 25px;
+    width: 210px;
+    
+
     &:nth-child(2n) {
       margin-right: 0px;
     }
@@ -61,12 +65,14 @@
   }
 }
 .clients__icon-list {
-  margin-bottom: 50px;
-
   &:focus,
   &:hover {
     cursor: pointer;
     fill: var(--accent-color);
     border-color: var(--accent-color);
   }
+
+  @media (min-width: 1200px){
+    margin-bottom: 50px;
+    }
 }
