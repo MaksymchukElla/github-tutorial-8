@@ -520,7 +520,7 @@ p {
   background-size: cover;
   background-color: var(--title-background-color);
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay .overlay {
     background-image: url("../images/mob@2x.jpg");
   }
@@ -530,9 +530,9 @@ p {
     background-image: url("../images/tab1x.jpg");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay .overlay {
-    background-image: url("../images/tab2x.jpg");
+    background-image: url("../images/tab@2x.jpg");
   }
 }
 @media (min-width: 1200px) {
@@ -543,9 +543,9 @@ p {
     background-image: url("../images/des.jpg");
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay .overlay {
-    background-image: url("../images/des/des2x.jpg");
+    background-image: url("../images/des@2x.jpg");
   }
 }
 
