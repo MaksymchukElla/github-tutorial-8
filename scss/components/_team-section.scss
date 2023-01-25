@@ -5,17 +5,20 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    
+    
     margin-left: calc(-1 * 30);
     margin-top: calc(-1 * 30);
-    gap: 30px;
+    
   }
 }
 
 .team__main > .team__list {
   @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     flex-basis: calc((100% - 30px) / 2);
   }
   @media (min-width: 1200px) {

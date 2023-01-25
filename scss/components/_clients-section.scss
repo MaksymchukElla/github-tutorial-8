@@ -25,13 +25,17 @@
   height: 92px;
   width: 100%;
   margin-bottom: 30px;
-  
+
   fill: #afb1b8;
   box-sizing: border-box;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: 480px) {
     margin-right: 25px;
@@ -71,7 +75,7 @@
     border-color: var(--accent-color);
   }
 
-  @media (min-width: 1200px){
+  @media (min-width: 1200px) {
     margin-bottom: 50px;
-    }
+  }
 }
