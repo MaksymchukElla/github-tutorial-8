@@ -48,9 +48,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    flex-basis: calc((100% - 30px) / 2);
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
      
   }
   @media (min-width: 1200px) {
