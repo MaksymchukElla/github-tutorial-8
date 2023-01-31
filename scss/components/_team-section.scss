@@ -22,7 +22,7 @@
 .team__main > .team__list {
   @media (min-width: 768px) {
     margin-right: 30px;
-    flex-basis: calc(100% / 2 - 60px);
+    flex-basis: calc(100% / 2 - 30px);
   }
 
   @media (min-width: 1200px) {
@@ -40,11 +40,14 @@
 
   @media (min-width: 768px) {
     margin-bottom: 30px;
+
+    &:nth-child(2n){
+      margin-right: 0px;
+    }
   }
 
   @media (min-width: 1200px) {
     margin-bottom: 0px;
-
 
     &:nth-child(4n) {
       margin-right: 0px;

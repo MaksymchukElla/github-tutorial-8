@@ -783,8 +783,8 @@ p {
 @media (min-width: 768px) {
   .team__main > .team__list {
     margin-right: 30px;
-    -ms-flex-preferred-size: calc(50% - 60px);
-        flex-basis: calc(50% - 60px);
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
   }
 }
 @media (min-width: 1200px) {
@@ -805,6 +805,9 @@ p {
 @media (min-width: 768px) {
   .team__list {
     margin-bottom: 30px;
+  }
+  .team__list:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 @media (min-width: 1200px) {
