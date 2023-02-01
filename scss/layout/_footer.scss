@@ -1,7 +1,14 @@
 .footer {
-//  display: flex;
- align-items: center;
-//  justify-content: left;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 1200px) {
+    justify-content: left;
+    align-items: baseline
+  }
 }
 
 .footer__info {
@@ -14,11 +21,13 @@
   margin-top: 28px;
   text-align: center;
 
-  // @media (min-width: 1200px){
-  //   margin-top: 9px;
-  //   margin-bottom: 0;
-  //  margin-bottom: 12px;
-  // }
+
+
+  @media (min-width: 768px) {
+    margin-top: 12px;
+    // margin-bottom: 0;
+    // margin-bottom: 12px;
+  }
 }
 
 .footer__studio {
@@ -53,13 +62,16 @@
   color: #ffffff;
 
   @media (min-width: 1200px) {
-    margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
 .social {
   text-align: center;
-  //  margin-left: 70px;
+
+  @media (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .social__socials-list {
@@ -76,12 +88,16 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
   color: var(--primary-white-color);
 
-  // @media (min-width: 1200px) {
-  //   margin-bottom: 0px;
-  // }
+  @media (max-width: 1199px){
+    text-align: center;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
 }
 
 .footer-mailing__mailing-e-mail {
@@ -99,10 +115,10 @@
     width: 450px;
   }
 
-  //  @media (min-width: 1200px) {
-  //     width: 350px;
-  //     margin-right: 12px;
-  //    }
+  @media (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .footer-mailing__email-field-label {
@@ -164,10 +180,14 @@
   justify-content: center;
 }
 
-// .footer-mailing__mailing-user {
-//   display: flex;
-// }
+.footer-mailing__mailing-user {
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+}
 
-// .footer-mailing {
-//   margin-left: 93px;
-// }
+.footer-mailing {
+  @media (min-width: 1200px) {
+  margin-left: 93px;
+  }
+}
