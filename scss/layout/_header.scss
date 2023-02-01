@@ -8,7 +8,11 @@
   }
 
   &__logo {
-    margin-right: 93px;
+    margin-right: 88px;
+
+    @media (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 
   &__nav {
@@ -16,8 +20,8 @@
 
     @media (min-width: 768px) {
       display: flex;
+    }
   }
-}
 
   &__nav &__item + &__item {
     margin-left: 50px;
@@ -60,15 +64,22 @@
   }
 
   &__contakt {
-    display: none;
+    @media (max-width: 767px) {
+      display: none;
+    }
 
     @media (min-width: 768px) {
-      display: flex;
       margin-left: auto;
     }
 
+    @media (min-width: 1200px) {
+      display: flex;
+    }
+
     & .header__item + .header__item {
-      margin-left: 40px;
+      @media (min-width: 1200px) {
+        margin-left: 40px;
+      }
     }
 
     &-link {
@@ -82,22 +93,33 @@
       display: flex;
       align-items: center;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media (min-width: 768px) {
+        margin-bottom: 10px;
+      }
     }
 
     &-link:focus,
     &-link:hover {
       color: var(--accent-color);
     }
+
+    
   }
 
   &__icon-envelope {
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     margin-right: 10px;
     padding: 0;
     margin-bottom: 0;
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width: 1200px) {
+      width: 16px;
+    height: 12px;
+    }
 
     &:focus,
     &:hover {
@@ -106,12 +128,16 @@
   }
   &__icon-tel {
     width: 10px;
-    height: 16px;
+    height: 14px;
     margin-right: 10px;
     margin-bottom: 0px;
     padding: 0;
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width: 1200px) {
+      height: 16px;
+    }
 
     &:focus,
     &:hover {
@@ -120,7 +146,6 @@
   }
 
   &__contakt-type {
-    padding-left: 40px;
     color: var(--title-text-color);
     text-decoration: none;
     font-style: normal;
@@ -136,32 +161,33 @@
     &:hover {
       color: var(--accent-color);
     }
+
+    @media (min-width: 1200px) {
+      padding-left: 40px;
+    }
   }
 }
 
-.header__burger{
-   position: absolute;
-   right: 10px;
-   padding: 0;
-   background: none;
-   border: none;
+.header__burger {
+  position: absolute;
+  right: 10px;
+  padding: 0;
+  background: none;
+  border: none;
 
-   @media (min-width: 768px){
+  @media (min-width: 768px) {
     display: none;
   }
 }
 
-  header__burger-icon {
-    width: 24px;
-    height: 16px;
-    background: #212121;
-    cursor: pointer;
+header__burger-icon {
+  width: 24px;
+  height: 16px;
+  background: #212121;
+  cursor: pointer;
 
   &-icon :focus,
   &-icon :hover {
     background-color: var(--accent-color);
   }
 }
-
-
-
