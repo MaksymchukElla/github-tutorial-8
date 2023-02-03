@@ -61,11 +61,58 @@
               >
             </li>
           </ul>
-          <button class="header__burger" type="button">
-            <svg class="header__burger-icon" width="40" height="40">
-              <use href="./images/symbol-defs.svg#icon-menu_40px-1"></use>
+          <button class="header__burger" type="button" data-menu-open>
+            <svg class="header__burger-icon" width="24" height="16">
+              <use href="./images/symbol-defs.svg#icon-burger"></use>
             </svg>
           </button>
+        </div>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu >
+        <div class="container-mob-menu">
+          <div class="mob-menu__top">
+            <button class="mob-menu__close" type="button" data-menu-close >
+              <span>&#10005;</span>
+            </button>
+            <nav>
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link link-current" href="">Студія</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu__blok">
+            <ul class="mob-menu__contakt list">
+              <li>
+                <a href="tel.:+380961111111" class="mob-menu__contakt-type"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-menu__contakt-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <li class="mob-menu__soc list">
+              <h2 class="mob-menu__soc-title">Instagram</h2>
+              <h2 class="mob-menu__soc-title">Twitter</h2>
+              <h2 class="mob-menu__soc-title">Facebook</h2>
+              <h2 class="mob-menu__soc-title">LinkedIn</h2>
+            </li>
+          </div>
         </div>
       </div>
     </header>

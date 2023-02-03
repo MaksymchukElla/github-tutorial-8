@@ -3,11 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline
   }
 
   @media (min-width: 1200px) {
     justify-content: left;
-    align-items: baseline
   }
 }
 
