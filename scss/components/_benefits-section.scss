@@ -27,7 +27,11 @@
 .benefits__blok {
   margin-bottom: 30px;
 
-  @media (min-width: 768px) and (max-width: 1199px) {
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  @media (min-width: 768px) {
     margin-bottom: 0px;
   }
 

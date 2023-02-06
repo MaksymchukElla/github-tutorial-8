@@ -11,6 +11,10 @@
   }
 }
 
+.footer__studio {
+  color: var(--primary-white-color);
+}
+
 .footer__info {
   color: #ffffff;
   font-style: normal;
@@ -19,23 +23,21 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 28px;
-  text-align: center;
 
-
+  @media (max-width: 1199px){
+    text-align: center;
+  }
 
   @media (min-width: 768px) {
     margin-top: 12px;
-    // margin-bottom: 0;
-    // margin-bottom: 12px;
   }
 }
 
-.footer__studio {
-  color: var(--primary-white-color);
+.footer__info-list {
+  margin-bottom: 12px;
 }
 
 .footer__info-link {
-  margin-bottom: 12px;
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
@@ -52,7 +54,7 @@
 }
 
 .social__text-name {
-  margin-top: 60px;
+  
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -67,7 +69,11 @@
 }
 
 .social {
-  text-align: center;
+  margin-top: 60px;
+
+  @media (max-width: 1199px){
+    text-align: center;
+  }
 
   @media (min-width: 1200px) {
     margin-left: 70px;
@@ -81,7 +87,7 @@
 }
 
 .footer-mailing__mailing-name {
-  margin-top: 60px;
+  
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -177,7 +183,10 @@
 
 .footer-logo {
   display: flex;
-  justify-content: center;
+  
+  @media (max-width: 1199px) {
+   justify-content: center;
+  }
 }
 
 .footer-mailing__mailing-user {
@@ -187,6 +196,8 @@
 }
 
 .footer-mailing {
+  margin-top: 60px;
+
   @media (min-width: 1200px) {
   margin-left: 93px;
   }
